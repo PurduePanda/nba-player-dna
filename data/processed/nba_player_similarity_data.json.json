@@ -36,6 +36,19 @@
       "REB_36": 2.8573595909248537,
       "STL_36": 0.43295442074870605,
       "BLK_36": 0.6079679666157037
+    },
+    "clustering": {
+      "algorithm": "kmeans",
+      "number_of_clusters": 6,
+      "random_state": 42,
+      "cluster_names": {
+        "0": "Three-Point Specialist",
+        "1": "Interior Defensive Big",
+        "2": "High-Volume Scorer",
+        "3": "Versatile Role Player",
+        "4": "Do-It-All Superstar",
+        "5": "Two-Way Wing"
+      }
     }
   },
   "players": [
@@ -107,7 +120,9 @@
           "player": "Stephon Castle",
           "distance": 2.8118917856084753
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Shai Gilgeous-Alexander",
@@ -177,7 +192,9 @@
           "player": "Kawhi Leonard",
           "distance": 2.7254686394622674
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Jaylen Brown",
@@ -247,7 +264,9 @@
           "player": "Jalen Johnson",
           "distance": 2.4049478345152564
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Kevin Durant",
@@ -317,7 +336,9 @@
           "player": "Keyonte George",
           "distance": 2.0392022190153845
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Tyrese Maxey",
@@ -387,7 +408,9 @@
           "player": "Anthony Black",
           "distance": 2.021887170292688
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Donovan Mitchell",
@@ -457,7 +480,9 @@
           "player": "Scoot Henderson",
           "distance": 2.1265579441331184
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Jalen Brunson",
@@ -527,7 +552,9 @@
           "player": "Malik Monk",
           "distance": 2.1318708808086777
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Jamal Murray",
@@ -597,7 +624,9 @@
           "player": "Kevin Durant",
           "distance": 2.022996576512216
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Kawhi Leonard",
@@ -667,7 +696,9 @@
           "player": "Ajay Mitchell",
           "distance": 2.6494397233849485
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Nikola Jokić",
@@ -737,7 +768,9 @@
           "player": "James Harden",
           "distance": 3.8365830414900675
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Anthony Edwards",
@@ -807,7 +840,9 @@
           "player": "Tyrese Maxey",
           "distance": 1.9194776490722125
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Devin Booker",
@@ -877,7 +912,9 @@
           "player": "Cam Thomas",
           "distance": 2.0864850342745043
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Julius Randle",
@@ -947,7 +984,9 @@
           "player": "Bennedict Mathurin",
           "distance": 1.7578714153130717
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Brandon Ingram",
@@ -1017,7 +1056,9 @@
           "player": "Desmond Bane",
           "distance": 1.5355293350540047
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "James Harden",
@@ -1087,7 +1128,9 @@
           "player": "Julius Randle",
           "distance": 2.2267646818409825
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Desmond Bane",
@@ -1157,7 +1200,9 @@
           "player": "Zach LaVine",
           "distance": 1.3945635997725707
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Nickeil Alexander-Walker",
@@ -1227,7 +1272,9 @@
           "player": "Ayo Dosunmu",
           "distance": 1.5832932938711106
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Jalen Johnson",
@@ -1297,7 +1344,9 @@
           "player": "Jaylen Brown",
           "distance": 2.4049478345152564
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Victor Wembanyama",
@@ -1367,7 +1416,9 @@
           "player": "Jaren Jackson Jr.",
           "distance": 4.71563192070594
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Paolo Banchero",
@@ -1437,7 +1488,9 @@
           "player": "RJ Barrett",
           "distance": 2.407340834564938
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Deni Avdija",
@@ -1507,7 +1560,9 @@
           "player": "Joel Embiid",
           "distance": 2.6291965159564765
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Cade Cunningham",
@@ -1577,7 +1632,9 @@
           "player": "James Harden",
           "distance": 2.599576115839596
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Karl-Anthony Towns",
@@ -1647,7 +1704,9 @@
           "player": "Julius Randle",
           "distance": 2.662307247106062
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Kon Knueppel",
@@ -1717,7 +1776,9 @@
           "player": "Desmond Bane",
           "distance": 1.7902118219272722
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Pascal Siakam",
@@ -1787,7 +1848,9 @@
           "player": "Jalen Williams",
           "distance": 1.9100385743609782
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Cooper Flagg",
@@ -1857,7 +1920,9 @@
           "player": "RJ Barrett",
           "distance": 1.9422954045753007
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Bam Adebayo",
@@ -1927,7 +1992,9 @@
           "player": "Lauri Markkanen",
           "distance": 2.1957719466205474
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Alperen Sengun",
@@ -1997,7 +2064,9 @@
           "player": "Amen Thompson",
           "distance": 2.413896841270785
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Scottie Barnes",
@@ -2067,7 +2136,9 @@
           "player": "Kyle Filipowski",
           "distance": 2.3310991378650177
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "LaMelo Ball",
@@ -2137,7 +2208,9 @@
           "player": "Luka Dončić",
           "distance": 2.9474792339258116
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Amen Thompson",
@@ -2207,7 +2280,9 @@
           "player": "Brandon Williams",
           "distance": 2.0817785060548446
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "CJ McCollum",
@@ -2277,7 +2352,9 @@
           "player": "Jordan Poole",
           "distance": 1.6005036327070568
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Trey Murphy III",
@@ -2347,7 +2424,9 @@
           "player": "Simone Fontecchio",
           "distance": 1.5871401730254215
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "DeMar DeRozan",
@@ -2417,7 +2496,9 @@
           "player": "Amen Thompson",
           "distance": 2.1269514889083063
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Jalen Duren",
@@ -2487,7 +2568,9 @@
           "player": "Moussa Diabaté",
           "distance": 2.7117967915205834
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Payton Pritchard",
@@ -2557,7 +2640,9 @@
           "player": "Miles Bridges",
           "distance": 1.829680900150153
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "De'Aaron Fox",
@@ -2627,7 +2712,9 @@
           "player": "LeBron James",
           "distance": 1.684169571428156
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Miles Bridges",
@@ -2697,7 +2784,9 @@
           "player": "Saddiq Bey",
           "distance": 1.477022246305111
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Brandon Miller",
@@ -2767,7 +2856,9 @@
           "player": "Scoot Henderson",
           "distance": 1.729660662523188
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Zion Williamson",
@@ -2837,7 +2928,9 @@
           "player": "Jalen Duren",
           "distance": 2.6797281050751343
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Ryan Rollins",
@@ -2907,7 +3000,9 @@
           "player": "Bones Hyland",
           "distance": 1.8549199765536692
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Keyonte George",
@@ -2977,7 +3072,9 @@
           "player": "Donovan Mitchell",
           "distance": 1.8435766415539898
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Saddiq Bey",
@@ -3047,7 +3144,9 @@
           "player": "Will Riley",
           "distance": 1.6560810837005804
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Derrick White",
@@ -3117,7 +3216,9 @@
           "player": "Aaron Wiggins",
           "distance": 2.078233249146054
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Norman Powell",
@@ -3187,7 +3288,9 @@
           "player": "Jerami Grant",
           "distance": 1.7563856035087853
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Michael Porter Jr.",
@@ -3257,7 +3360,9 @@
           "player": "Cedric Coward",
           "distance": 1.9282683735249777
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "LeBron James",
@@ -3327,7 +3432,9 @@
           "player": "Jaime Jaquez Jr.",
           "distance": 1.9812409105135604
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Matas Buzelis",
@@ -3397,7 +3504,9 @@
           "player": "Andrew Wiggins",
           "distance": 2.0115833907440646
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Jabari Smith Jr.",
@@ -3467,7 +3576,9 @@
           "player": "Ochai Agbaji",
           "distance": 1.557169698512831
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "VJ Edgecombe",
@@ -3537,7 +3648,9 @@
           "player": "Tobias Harris",
           "distance": 1.4669609666434562
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Austin Reaves",
@@ -3607,7 +3720,9 @@
           "player": "Jerami Grant",
           "distance": 2.0692729861180323
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Chet Holmgren",
@@ -3677,7 +3792,9 @@
           "player": "Kristaps Porziņģis",
           "distance": 2.5485730125962176
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Mikal Bridges",
@@ -3747,7 +3864,9 @@
           "player": "Jaden Ivey",
           "distance": 1.7534230603289245
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Evan Mobley",
@@ -3817,7 +3936,9 @@
           "player": "Jonas Valanciunas",
           "distance": 2.267508503558888
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Jeremiah Fears",
@@ -3887,7 +4008,9 @@
           "player": "Rob Dillingham",
           "distance": 1.8191747208601012
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Jaime Jaquez Jr.",
@@ -3957,7 +4080,9 @@
           "player": "Desmond Bane",
           "distance": 1.7441691616389026
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Immanuel Quickley",
@@ -4027,7 +4152,9 @@
           "player": "Jose Alvarado",
           "distance": 1.7444951690635682
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Stephen Curry",
@@ -4097,7 +4224,9 @@
           "player": "Jamal Murray",
           "distance": 2.2624795416788097
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Brandin Podziemski",
@@ -4167,7 +4296,9 @@
           "player": "Kentavious Caldwell-Pope",
           "distance": 1.391332410844802
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Stephon Castle",
@@ -4237,7 +4368,9 @@
           "player": "Cade Cunningham",
           "distance": 2.2913798951047233
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Dillon Brooks",
@@ -4307,7 +4440,9 @@
           "player": "Jalen Green",
           "distance": 1.9833436183036681
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Naji Marshall",
@@ -4377,7 +4512,9 @@
           "player": "DeMar DeRozan",
           "distance": 1.5241811790907611
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Lauri Markkanen",
@@ -4447,7 +4584,9 @@
           "player": "Brice Sensabaugh",
           "distance": 2.053138233009318
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Onyeka Okongwu",
@@ -4517,7 +4656,9 @@
           "player": "Justin Champagnie",
           "distance": 1.5914080387163436
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "OG Anunoby",
@@ -4587,7 +4728,9 @@
           "player": "Moses Moody",
           "distance": 1.6231501148576402
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Brice Sensabaugh",
@@ -4657,7 +4800,9 @@
           "player": "Desmond Bane",
           "distance": 1.4657749231545933
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Reed Sheppard",
@@ -4727,7 +4872,9 @@
           "player": "Donte DiVincenzo",
           "distance": 2.056391443823993
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Toumani Camara",
@@ -4797,7 +4944,9 @@
           "player": "Royce O'Neale",
           "distance": 1.3802975000695643
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "RJ Barrett",
@@ -4867,7 +5016,9 @@
           "player": "Lauri Markkanen",
           "distance": 1.5702859949556103
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Jaden McDaniels",
@@ -4937,7 +5088,9 @@
           "player": "Derrick Jones Jr.",
           "distance": 1.6949564142418432
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Keldon Johnson",
@@ -5007,7 +5160,9 @@
           "player": "Lauri Markkanen",
           "distance": 1.8157702579266333
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Tim Hardaway Jr.",
@@ -5077,7 +5232,9 @@
           "player": "Devin Vassell",
           "distance": 1.7600135766304916
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Jerami Grant",
@@ -5147,7 +5304,9 @@
           "player": "Peyton Watson",
           "distance": 1.9612000907742975
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Collin Sexton",
@@ -5217,7 +5376,9 @@
           "player": "Ajay Mitchell",
           "distance": 1.9232179827093865
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Naz Reid",
@@ -5287,7 +5448,9 @@
           "player": "Aaron Wiggins",
           "distance": 1.8898945214080118
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Andrew Wiggins",
@@ -5357,7 +5520,9 @@
           "player": "Naz Reid",
           "distance": 1.4882504179233103
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Shaedon Sharpe",
@@ -5427,7 +5592,9 @@
           "player": "Dillon Brooks",
           "distance": 2.4106558945631584
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Ayo Dosunmu",
@@ -5497,7 +5664,9 @@
           "player": "Dylan Harper",
           "distance": 1.622407693988773
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Joel Embiid",
@@ -5567,7 +5736,9 @@
           "player": "GG Jackson",
           "distance": 2.738815208518685
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Collin Gillespie",
@@ -5637,7 +5808,9 @@
           "player": "Jevon Carter",
           "distance": 1.6294465548854675
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Quentin Grimes",
@@ -5707,7 +5880,9 @@
           "player": "Kobe Brown",
           "distance": 1.4854272484183846
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Donte DiVincenzo",
@@ -5777,7 +5952,9 @@
           "player": "Miles McBride",
           "distance": 1.510142104875036
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Ace Bailey",
@@ -5847,7 +6024,9 @@
           "player": "VJ Edgecombe",
           "distance": 1.676332859696511
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Giannis Antetokounmpo",
@@ -5917,7 +6096,9 @@
           "player": "Domantas Sabonis",
           "distance": 3.4428366107158235
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Russell Westbrook",
@@ -5987,7 +6168,9 @@
           "player": "Cade Cunningham",
           "distance": 2.270443752319401
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Andrew Nembhard",
@@ -6057,7 +6240,9 @@
           "player": "LeBron James",
           "distance": 1.995046081102109
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Nikola Vučević",
@@ -6127,7 +6312,9 @@
           "player": "Danny Wolf",
           "distance": 2.084122465441477
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Anthony Black",
@@ -6197,7 +6384,9 @@
           "player": "Jamaree Bouyea",
           "distance": 1.7471212553587157
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Bennedict Mathurin",
@@ -6267,7 +6456,9 @@
           "player": "Pelle Larsson",
           "distance": 1.9860668504362258
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Derik Queen",
@@ -6337,7 +6528,9 @@
           "player": "Jalen Johnson",
           "distance": 2.6171351675136223
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Max Christie",
@@ -6407,7 +6600,9 @@
           "player": "Duncan Robinson",
           "distance": 1.2878764034821817
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Duncan Robinson",
@@ -6477,7 +6672,9 @@
           "player": "Daeqwon Plowden",
           "distance": 1.4511106936190297
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "John Collins",
@@ -6547,7 +6744,9 @@
           "player": "Andrew Wiggins",
           "distance": 1.7292870936091767
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Donovan Clingan",
@@ -6617,7 +6816,9 @@
           "player": "Isaiah Stewart",
           "distance": 2.8835234003556285
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Devin Vassell",
@@ -6687,7 +6888,9 @@
           "player": "Harrison Barnes",
           "distance": 1.2434716806573196
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Jaren Jackson Jr.",
@@ -6757,7 +6960,9 @@
           "player": "Onyeka Okongwu",
           "distance": 2.072131688332751
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Maxime Raynaud",
@@ -6827,7 +7032,9 @@
           "player": "Precious Achiuwa",
           "distance": 2.045931871018264
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Wendell Carter Jr.",
@@ -6897,7 +7104,9 @@
           "player": "Sandro Mamukelashvili",
           "distance": 1.861156502569602
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Josh Giddey",
@@ -6967,7 +7176,9 @@
           "player": "Isaiah Collier",
           "distance": 2.763976979351923
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Bobby Portis Jr.",
@@ -7037,7 +7248,9 @@
           "player": "Cedric Coward",
           "distance": 2.1238215125581834
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Tre Jones",
@@ -7107,7 +7320,9 @@
           "player": "Desmond Bane",
           "distance": 2.284634036236754
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Julian Champagnie",
@@ -7177,7 +7392,9 @@
           "player": "Tidjane Salaün",
           "distance": 1.620770587207115
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Dyson Daniels",
@@ -7247,7 +7464,9 @@
           "player": "Pat Spencer",
           "distance": 2.540559172792203
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Deandre Ayton",
@@ -7317,7 +7536,9 @@
           "player": "Leonard Miller",
           "distance": 2.482936946247051
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Kyle Kuzma",
@@ -7387,7 +7608,9 @@
           "player": "Miles Bridges",
           "distance": 1.3523037861479232
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Sandro Mamukelashvili",
@@ -7457,7 +7680,9 @@
           "player": "Tobias Harris",
           "distance": 1.5984803940028653
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Jarace Walker",
@@ -7527,7 +7752,9 @@
           "player": "VJ Edgecombe",
           "distance": 1.484547771503146
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Kyle Filipowski",
@@ -7597,7 +7824,9 @@
           "player": "Jarace Walker",
           "distance": 2.015068386180463
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Bub Carrington",
@@ -7667,7 +7896,9 @@
           "player": "Pat Spencer",
           "distance": 1.9804344144643573
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Jaylon Tyson",
@@ -7737,7 +7968,9 @@
           "player": "Ayo Dosunmu",
           "distance": 1.430048305918088
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Coby White",
@@ -7807,7 +8040,9 @@
           "player": "Jamal Murray",
           "distance": 2.271689918596002
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Jaylen Wells",
@@ -7877,7 +8112,9 @@
           "player": "Jordan Clarkson",
           "distance": 1.3231450095172645
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Jrue Holiday",
@@ -7947,7 +8184,9 @@
           "player": "Pat Spencer",
           "distance": 2.058835163504613
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Jarrett Allen",
@@ -8017,7 +8256,9 @@
           "player": "Goga Bitadze",
           "distance": 2.4080095823231846
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Brandon Williams",
@@ -8087,7 +8328,9 @@
           "player": "Amen Thompson",
           "distance": 2.0817785060548446
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Kel'el Ware",
@@ -8157,7 +8400,9 @@
           "player": "Leonard Miller",
           "distance": 2.8988626261178085
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Myles Turner",
@@ -8227,7 +8472,9 @@
           "player": "Jalen Smith",
           "distance": 2.2078610208914484
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Darius Garland",
@@ -8297,7 +8544,9 @@
           "player": "LaMelo Ball",
           "distance": 2.2318388928844275
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Cedric Coward",
@@ -8367,7 +8616,9 @@
           "player": "Onyeka Okongwu",
           "distance": 1.5193470430039704
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Grayson Allen",
@@ -8437,7 +8688,9 @@
           "player": "Reed Sheppard",
           "distance": 1.8400779230618465
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Tobias Harris",
@@ -8507,7 +8760,9 @@
           "player": "Jock Landale",
           "distance": 1.4394778334596234
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Rudy Gobert",
@@ -8577,7 +8832,9 @@
           "player": "Mark Williams",
           "distance": 2.513467325038148
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Dylan Harper",
@@ -8647,7 +8904,9 @@
           "player": "Khris Middleton",
           "distance": 1.6931333477118227
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Klay Thompson",
@@ -8717,7 +8976,9 @@
           "player": "Ace Bailey",
           "distance": 1.9490973062474366
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Nic Claxton",
@@ -8787,7 +9048,9 @@
           "player": "Maxime Raynaud",
           "distance": 2.379234304791488
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "AJ Green",
@@ -8857,7 +9120,9 @@
           "player": "Max Christie",
           "distance": 1.9063636478201746
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Noah Clowney",
@@ -8927,7 +9192,9 @@
           "player": "Peyton Watson",
           "distance": 1.8332617294812827
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Pelle Larsson",
@@ -8997,7 +9264,9 @@
           "player": "DeMar DeRozan",
           "distance": 1.8461536920431814
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Cam Spencer",
@@ -9067,7 +9336,9 @@
           "player": "Tre Jones",
           "distance": 2.4962203382406116
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "P.J. Washington",
@@ -9137,7 +9408,9 @@
           "player": "Jock Landale",
           "distance": 1.7299158885733839
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Josh Hart",
@@ -9207,7 +9480,9 @@
           "player": "Dylan Harper",
           "distance": 2.068691172575302
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Peyton Watson",
@@ -9277,7 +9552,9 @@
           "player": "Matas Buzelis",
           "distance": 1.7539035806734449
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Jalen Suggs",
@@ -9347,7 +9624,9 @@
           "player": "Tyrese Proctor",
           "distance": 2.796532751140015
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Anfernee Simons",
@@ -9417,7 +9696,9 @@
           "player": "Zach LaVine",
           "distance": 1.6634560040987585
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Isaiah Joe",
@@ -9487,7 +9768,9 @@
           "player": "Josh Green",
           "distance": 1.84732105192381
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Alex Sarr",
@@ -9557,7 +9840,9 @@
           "player": "P.J. Washington",
           "distance": 2.8935974254560137
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Jay Huff",
@@ -9627,7 +9912,9 @@
           "player": "Evan Mobley",
           "distance": 3.5349966088082563
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Rui Hachimura",
@@ -9697,7 +9984,9 @@
           "player": "Svi Mykhailiuk",
           "distance": 1.7267617788710028
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Neemias Queta",
@@ -9767,7 +10056,9 @@
           "player": "Jarrett Allen",
           "distance": 2.021057768104047
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Ajay Mitchell",
@@ -9837,7 +10128,9 @@
           "player": "Trey Murphy III",
           "distance": 1.694636571764535
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Malik Monk",
@@ -9907,7 +10200,9 @@
           "player": "Desmond Bane",
           "distance": 1.5975273244725807
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Harrison Barnes",
@@ -9977,7 +10272,9 @@
           "player": "Tim Hardaway Jr.",
           "distance": 1.2609262985384184
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Royce O'Neale",
@@ -10047,7 +10344,9 @@
           "player": "Jevon Carter",
           "distance": 1.8592088569929484
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Will Riley",
@@ -10117,7 +10416,9 @@
           "player": "Julian Strawther",
           "distance": 1.3732274398642446
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Tristan da Silva",
@@ -10187,7 +10488,9 @@
           "player": "Gradey Dick",
           "distance": 1.2631036579637946
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Jimmy Butler III",
@@ -10257,7 +10560,9 @@
           "player": "Pelle Larsson",
           "distance": 2.859620143328226
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Dennis Schröder",
@@ -10327,7 +10632,9 @@
           "player": "Scoot Henderson",
           "distance": 1.9383428240063014
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Zach LaVine",
@@ -10397,7 +10704,9 @@
           "player": "Nickeil Alexander-Walker",
           "distance": 1.6314338878550656
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Precious Achiuwa",
@@ -10467,7 +10776,9 @@
           "player": "Collin Murray-Boyles",
           "distance": 2.023079130143073
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Tre Johnson",
@@ -10537,7 +10848,9 @@
           "player": "Aaron Nesmith",
           "distance": 1.4279957717000376
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Moses Moody",
@@ -10607,7 +10920,9 @@
           "player": "Julian Champagnie",
           "distance": 1.5515134649971818
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Ausar Thompson",
@@ -10677,7 +10992,9 @@
           "player": "Paul Reed",
           "distance": 3.3820861797323665
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Sam Hauser",
@@ -10747,7 +11064,9 @@
           "player": "Sam Merrill",
           "distance": 1.9029626092865592
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Jock Landale",
@@ -10817,7 +11136,9 @@
           "player": "Nikola Vučević",
           "distance": 1.5609306305648596
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Kyshawn George",
@@ -10887,7 +11208,9 @@
           "player": "Caris LeVert",
           "distance": 1.922076755028279
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Kelly Oubre Jr.",
@@ -10957,7 +11280,9 @@
           "player": "Bruce Brown",
           "distance": 1.418750884350407
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Mark Williams",
@@ -11027,7 +11352,9 @@
           "player": "Jalen Duren",
           "distance": 2.1043275865583135
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Franz Wagner",
@@ -11097,7 +11424,9 @@
           "player": "Kyle Kuzma",
           "distance": 1.7125840206643668
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Kevin Huerter",
@@ -11167,7 +11496,9 @@
           "player": "Jevon Carter",
           "distance": 1.4448851411508175
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Isaiah Collier",
@@ -11237,7 +11568,9 @@
           "player": "Josh Giddey",
           "distance": 2.763976979351923
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "GG Jackson",
@@ -11307,7 +11640,9 @@
           "player": "Andrew Wiggins",
           "distance": 1.7392071889694998
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Ivica Zubac",
@@ -11377,7 +11712,9 @@
           "player": "Leonard Miller",
           "distance": 2.681766266932797
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Tyler Herro",
@@ -11447,7 +11784,9 @@
           "player": "Ayo Dosunmu",
           "distance": 1.5250165230484294
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Jake LaRavia",
@@ -11517,7 +11856,9 @@
           "player": "Ziaire Williams",
           "distance": 1.5361491830692506
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Daniss Jenkins",
@@ -11587,7 +11928,9 @@
           "player": "Ryan Rollins",
           "distance": 1.7517033789375023
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Sam Merrill",
@@ -11657,7 +12000,9 @@
           "player": "Taurean Prince",
           "distance": 1.5880800688087413
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Kevin Porter Jr.",
@@ -11727,7 +12072,9 @@
           "player": "Jeremiah Fears",
           "distance": 2.599310070097787
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Cameron Johnson",
@@ -11797,7 +12144,9 @@
           "player": "Rui Hachimura",
           "distance": 1.486514176195735
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Cason Wallace",
@@ -11867,7 +12216,9 @@
           "player": "Javonte Green",
           "distance": 2.393692311876955
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Bilal Coulibaly",
@@ -11937,7 +12288,9 @@
           "player": "Taylor Hendricks",
           "distance": 2.0054036077396082
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Davion Mitchell",
@@ -12007,7 +12360,9 @@
           "player": "Bones Hyland",
           "distance": 2.240421406086082
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Luke Kennard",
@@ -12077,7 +12432,9 @@
           "player": "Pete Nance",
           "distance": 2.17032310862929
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Bruce Brown",
@@ -12147,7 +12504,9 @@
           "player": "Jarred Vanderbilt",
           "distance": 1.6962669134618704
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Nique Clifford",
@@ -12217,7 +12576,9 @@
           "player": "Jamaree Bouyea",
           "distance": 1.557203031900197
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Paul George",
@@ -12287,7 +12648,9 @@
           "player": "Aaron Wiggins",
           "distance": 1.777543688997824
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Zaccharie Risacher",
@@ -12357,7 +12720,9 @@
           "player": "Ryan Dunn",
           "distance": 1.3810738329779022
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Khris Middleton",
@@ -12427,7 +12792,9 @@
           "player": "Cedric Coward",
           "distance": 1.6368198267606506
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Ronald Holland II",
@@ -12497,7 +12864,9 @@
           "player": "Caleb Martin",
           "distance": 2.0274498009324704
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Brook Lopez",
@@ -12567,7 +12936,9 @@
           "player": "Zaccharie Risacher",
           "distance": 2.0948552597686603
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Marvin Bagley III",
@@ -12637,7 +13008,9 @@
           "player": "Wendell Carter Jr.",
           "distance": 1.9707778579308142
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Tari Eason",
@@ -12707,7 +13080,9 @@
           "player": "Nique Clifford",
           "distance": 1.8533230558991465
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Gui Santos",
@@ -12777,7 +13152,9 @@
           "player": "Jaylon Tyson",
           "distance": 1.7597023701347076
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Jordan Clarkson",
@@ -12847,7 +13224,9 @@
           "player": "Miles Bridges",
           "distance": 1.5371235134692491
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Aaron Nesmith",
@@ -12917,7 +13296,9 @@
           "player": "Corey Kispert",
           "distance": 1.413774209256263
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "De'Andre Hunter",
@@ -12987,7 +13368,9 @@
           "player": "Miles Bridges",
           "distance": 1.4715371810937412
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Aaron Wiggins",
@@ -13057,7 +13440,9 @@
           "player": "Kentavious Caldwell-Pope",
           "distance": 1.47851514742398
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Jordan Goodwin",
@@ -13127,7 +13512,9 @@
           "player": "Buddy Hield",
           "distance": 2.311409853678704
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Bones Hyland",
@@ -13197,7 +13584,9 @@
           "player": "Trey Murphy III",
           "distance": 1.5889288505036396
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "De'Anthony Melton",
@@ -13267,7 +13656,9 @@
           "player": "Alex Caruso",
           "distance": 2.5486116729569734
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Santi Aldama",
@@ -13337,7 +13728,9 @@
           "player": "Sandro Mamukelashvili",
           "distance": 1.5140551871618417
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Jordan Miller",
@@ -13407,7 +13800,9 @@
           "player": "Wendell Carter Jr.",
           "distance": 1.982024173515003
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Justin Champagnie",
@@ -13477,7 +13872,9 @@
           "player": "Zaccharie Risacher",
           "distance": 1.7905500671007437
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Simone Fontecchio",
@@ -13547,7 +13944,9 @@
           "player": "Jared McCain",
           "distance": 1.5055861051598474
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Kris Dunn",
@@ -13617,7 +14016,9 @@
           "player": "Herbert Jones",
           "distance": 2.2355015377568423
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Cody Williams",
@@ -13687,7 +14088,9 @@
           "player": "Kentavious Caldwell-Pope",
           "distance": 1.714296442960828
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Isaac Okoro",
@@ -13757,7 +14160,9 @@
           "player": "Julian Strawther",
           "distance": 1.475222658772665
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Aaron Gordon",
@@ -13827,7 +14232,9 @@
           "player": "Jock Landale",
           "distance": 1.9021978047679555
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Isaiah Stewart",
@@ -13897,7 +14304,9 @@
           "player": "Marvin Bagley III",
           "distance": 2.7593169141261806
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Marcus Smart",
@@ -13967,7 +14376,9 @@
           "player": "Kris Dunn",
           "distance": 1.8228355169704316
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Luguentz Dort",
@@ -14037,7 +14448,9 @@
           "player": "Gary Trent Jr.",
           "distance": 1.6246215853132018
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Moussa Diabaté",
@@ -14107,7 +14520,9 @@
           "player": "Marvin Bagley III",
           "distance": 2.1376951590981887
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Ziaire Williams",
@@ -14177,7 +14592,9 @@
           "player": "Ja'Kobe Walter",
           "distance": 1.8596591291295308
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Draymond Green",
@@ -14247,7 +14664,9 @@
           "player": "Nikola Jović",
           "distance": 2.643832067810325
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Javonte Green",
@@ -14317,7 +14736,9 @@
           "player": "John Konchar",
           "distance": 2.327015395045953
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Jalen Green",
@@ -14387,7 +14808,9 @@
           "player": "Brice Sensabaugh",
           "distance": 2.4090254070815953
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Cam Thomas",
@@ -14457,7 +14880,9 @@
           "player": "Jaden Hardy",
           "distance": 2.560128302910766
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Jonas Valanciunas",
@@ -14527,7 +14952,9 @@
           "player": "Domantas Sabonis",
           "distance": 2.821976043997197
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Jalen Williams",
@@ -14597,7 +15024,9 @@
           "player": "Pascal Siakam",
           "distance": 1.9100385743609782
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Jared McCain",
@@ -14667,7 +15096,9 @@
           "player": "Tristan da Silva",
           "distance": 1.434486280818738
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Luka Garza",
@@ -14737,7 +15168,9 @@
           "player": "Jock Landale",
           "distance": 1.9223600320717014
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Vít Krejčí",
@@ -14807,7 +15240,9 @@
           "player": "Royce O'Neale",
           "distance": 1.4067247774980416
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Gary Payton II",
@@ -14877,7 +15312,9 @@
           "player": "Sandro Mamukelashvili",
           "distance": 2.5177592566976603
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Dominick Barlow",
@@ -14947,7 +15384,9 @@
           "player": "Drew Eubanks",
           "distance": 1.9343058491649854
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Jamal Shead",
@@ -15017,7 +15456,9 @@
           "player": "Kentavious Caldwell-Pope",
           "distance": 2.3290519053726912
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Ja'Kobe Walter",
@@ -15087,7 +15528,9 @@
           "player": "Tristan da Silva",
           "distance": 1.8140876920607005
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Jalen Smith",
@@ -15157,7 +15600,9 @@
           "player": "Tidjane Salaün",
           "distance": 2.1079913627443427
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Day'Ron Sharpe",
@@ -15227,7 +15672,9 @@
           "player": "Oso Ighodaro",
           "distance": 3.139917039862697
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Walter Clayton Jr.",
@@ -15297,7 +15744,9 @@
           "player": "Scoot Henderson",
           "distance": 1.8996324161391231
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Egor Dëmin",
@@ -15367,7 +15816,9 @@
           "player": "Tyrese Martin",
           "distance": 1.6676355003634948
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Kristaps Porziņģis",
@@ -15437,7 +15888,9 @@
           "player": "Onyeka Okongwu",
           "distance": 2.364403867319603
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Corey Kispert",
@@ -15507,7 +15960,9 @@
           "player": "Jett Howard",
           "distance": 1.6075834045020074
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Oso Ighodaro",
@@ -15577,7 +16032,9 @@
           "player": "Moussa Diabaté",
           "distance": 2.320063114723246
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Olivier-Maxence Prosper",
@@ -15647,7 +16104,9 @@
           "player": "Trey Murphy III",
           "distance": 1.9471445967516958
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Gary Trent Jr.",
@@ -15717,7 +16176,9 @@
           "player": "Jared McCain",
           "distance": 1.8396395745475627
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Christian Braun",
@@ -15787,7 +16248,9 @@
           "player": "Tobias Harris",
           "distance": 1.6707722085066286
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "T.J. McConnell",
@@ -15857,7 +16320,9 @@
           "player": "Tyler Kolek",
           "distance": 3.4798722434706613
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Daniel Gafford",
@@ -15927,7 +16392,9 @@
           "player": "Drew Eubanks",
           "distance": 2.3295208411385286
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Jordan Poole",
@@ -15997,7 +16464,9 @@
           "player": "Egor Dëmin",
           "distance": 2.0027574126002
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Jaden Hardy",
@@ -16067,7 +16536,9 @@
           "player": "Malik Monk",
           "distance": 1.7357584904376842
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Ryan Kalkbrenner",
@@ -16137,7 +16608,9 @@
           "player": "Deandre Ayton",
           "distance": 3.0905093157317505
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Quinten Post",
@@ -16207,7 +16680,9 @@
           "player": "Danny Wolf",
           "distance": 1.8040208804339954
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Jose Alvarado",
@@ -16277,7 +16752,9 @@
           "player": "Bones Hyland",
           "distance": 1.771061238613801
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Caleb Love",
@@ -16347,7 +16824,9 @@
           "player": "Klay Thompson",
           "distance": 1.9051776551853026
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Danny Wolf",
@@ -16417,7 +16896,9 @@
           "player": "Carter Bryant",
           "distance": 1.744284747052884
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Patrick Williams",
@@ -16487,7 +16968,9 @@
           "player": "Ochai Agbaji",
           "distance": 1.5144800153869804
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Derrick Jones Jr.",
@@ -16557,7 +17040,9 @@
           "player": "Peyton Watson",
           "distance": 1.8239670800298795
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Paul Reed",
@@ -16627,7 +17112,9 @@
           "player": "Scottie Barnes",
           "distance": 3.463640193470757
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Nolan Traore",
@@ -16697,7 +17184,9 @@
           "player": "Pat Spencer",
           "distance": 2.1703063436306564
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Jaxson Hayes",
@@ -16767,7 +17256,9 @@
           "player": "Jakob Poeltl",
           "distance": 3.0640414162632443
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Herbert Jones",
@@ -16837,7 +17328,9 @@
           "player": "Micah Peavy",
           "distance": 1.812244670256722
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Kobe Sanders",
@@ -16907,7 +17400,9 @@
           "player": "Terance Mann",
           "distance": 1.6072094293249461
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Jakob Poeltl",
@@ -16977,7 +17472,9 @@
           "player": "Luka Garza",
           "distance": 2.195483288118799
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Miles McBride",
@@ -17047,7 +17544,9 @@
           "player": "Moses Moody",
           "distance": 1.4851804659630667
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Collin Murray-Boyles",
@@ -17117,7 +17616,9 @@
           "player": "Kyle Anderson",
           "distance": 2.068008848139964
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Keon Ellis",
@@ -17187,7 +17688,9 @@
           "player": "Moses Moody",
           "distance": 2.095432230792586
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Pat Spencer",
@@ -17257,7 +17760,9 @@
           "player": "VJ Edgecombe",
           "distance": 1.7957878847749078
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Landry Shamet",
@@ -17327,7 +17832,9 @@
           "player": "Cameron Johnson",
           "distance": 1.3858294393067254
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Jaylin Williams",
@@ -17397,7 +17904,9 @@
           "player": "Santi Aldama",
           "distance": 2.2550393755697704
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Svi Mykhailiuk",
@@ -17467,7 +17976,9 @@
           "player": "Landry Shamet",
           "distance": 1.474402685979855
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Ben Sheppard",
@@ -17537,7 +18048,9 @@
           "player": "Landry Shamet",
           "distance": 1.4813676673403995
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Micah Potter",
@@ -17607,7 +18120,9 @@
           "player": "Kobe Brown",
           "distance": 2.1550936096091435
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Gradey Dick",
@@ -17677,7 +18192,9 @@
           "player": "Jaylen Clark",
           "distance": 1.6177819471672916
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Terance Mann",
@@ -17747,7 +18264,9 @@
           "player": "Isaac Okoro",
           "distance": 1.6605937146418088
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Quenton Jackson",
@@ -17817,7 +18336,9 @@
           "player": "Will Riley",
           "distance": 1.6493624752812202
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Jusuf Nurkić",
@@ -17887,7 +18408,9 @@
           "player": "Amen Thompson",
           "distance": 3.061061210222884
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Luke Kornet",
@@ -17957,7 +18480,9 @@
           "player": "Adem Bona",
           "distance": 2.4639931891429314
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Caris LeVert",
@@ -18027,7 +18552,9 @@
           "player": "Kyshawn George",
           "distance": 1.922076755028279
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Sion James",
@@ -18097,7 +18624,9 @@
           "player": "Jalen Wilson",
           "distance": 1.7204474627728832
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Tristan Vukcevic",
@@ -18167,7 +18696,9 @@
           "player": "Onyeka Okongwu",
           "distance": 2.4103477864026766
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Will Richard",
@@ -18237,7 +18768,9 @@
           "player": "Alex Caruso",
           "distance": 1.899317405166198
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Jonathan Kuminga",
@@ -18307,7 +18840,9 @@
           "player": "Kyle Filipowski",
           "distance": 1.7838712053406223
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Taylor Hendricks",
@@ -18377,7 +18912,9 @@
           "player": "OG Anunoby",
           "distance": 1.5154538047563944
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Isaiah Hartenstein",
@@ -18447,7 +18984,9 @@
           "player": "Derik Queen",
           "distance": 2.6523626914330105
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Ousmane Dieng",
@@ -18517,7 +19056,9 @@
           "player": "Jaden Ivey",
           "distance": 1.7271463489508396
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Kentavious Caldwell-Pope",
@@ -18587,7 +19128,9 @@
           "player": "Keaton Wallace",
           "distance": 1.499802109223709
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Baylor Scheierman",
@@ -18657,7 +19200,9 @@
           "player": "Harrison Barnes",
           "distance": 1.6558270026809467
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Scoot Henderson",
@@ -18727,7 +19272,9 @@
           "player": "Darius Garland",
           "distance": 1.841812539968604
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Julian Strawther",
@@ -18797,7 +19344,9 @@
           "player": "Jaylon Tyson",
           "distance": 1.276742068488083
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Rob Dillingham",
@@ -18867,7 +19416,9 @@
           "player": "Jahmai Mashack",
           "distance": 2.4127847736178145
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Drake Powell",
@@ -18937,7 +19488,9 @@
           "player": "Terance Mann",
           "distance": 1.5267771571039606
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Anthony Davis",
@@ -19007,7 +19560,9 @@
           "player": "Alperen Sengun",
           "distance": 2.9235643473453785
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Ryan Dunn",
@@ -19077,7 +19632,9 @@
           "player": "Rayan Rupert",
           "distance": 1.501848600111561
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Andre Drummond",
@@ -19147,7 +19704,9 @@
           "player": "P.J. Washington",
           "distance": 2.8665530224965754
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Robert Williams III",
@@ -19217,7 +19776,9 @@
           "player": "Donovan Clingan",
           "distance": 3.369285128211844
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Ryan Nembhard",
@@ -19287,7 +19848,9 @@
           "player": "Vince Williams Jr.",
           "distance": 2.7480793815207742
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Javon Small",
@@ -19357,7 +19920,9 @@
           "player": "Ryan Rollins",
           "distance": 1.7610621475908335
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Dru Smith",
@@ -19427,7 +19992,9 @@
           "player": "Ronald Holland II",
           "distance": 3.1573894245478504
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Buddy Hield",
@@ -19497,7 +20064,9 @@
           "player": "Tyrese Proctor",
           "distance": 1.5613961726994074
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Ja Morant",
@@ -19567,7 +20136,9 @@
           "player": "James Harden",
           "distance": 2.9444962647442185
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Justin Edwards",
@@ -19637,7 +20208,9 @@
           "player": "Kris Dunn",
           "distance": 1.8004800924854685
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Sidy Cissoko",
@@ -19707,7 +20280,9 @@
           "player": "Jalen Wilson",
           "distance": 1.8039813837654155
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Yves Missi",
@@ -19777,7 +20352,9 @@
           "player": "Chet Holmgren",
           "distance": 3.1157984886177617
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Goga Bitadze",
@@ -19847,7 +20424,9 @@
           "player": "Adem Bona",
           "distance": 2.3939495937012603
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Nae'Qwan Tomlin",
@@ -19917,7 +20496,9 @@
           "player": "Kelly Oubre Jr.",
           "distance": 1.664373942433835
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Guerschon Yabusele",
@@ -19987,7 +20568,9 @@
           "player": "Rasheer Fleming",
           "distance": 1.610506506004571
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Al Horford",
@@ -20057,7 +20640,9 @@
           "player": "Jaylin Williams",
           "distance": 2.3736710762914113
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Isaiah Jackson",
@@ -20127,7 +20712,9 @@
           "player": "Marvin Bagley III",
           "distance": 2.2374189855012285
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Thomas Bryant",
@@ -20197,7 +20784,9 @@
           "player": "Santi Aldama",
           "distance": 1.845350461514348
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Jamir Watkins",
@@ -20267,7 +20856,9 @@
           "player": "Ziaire Williams",
           "distance": 1.6000624775826227
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Jordan Walsh",
@@ -20337,7 +20928,9 @@
           "player": "Jabari Walker",
           "distance": 1.8370683655314146
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Josh Minott",
@@ -20407,7 +21000,9 @@
           "player": "Kelly Oubre Jr.",
           "distance": 2.1075475368065524
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Kenrich Williams",
@@ -20477,7 +21072,9 @@
           "player": "Kelly Oubre Jr.",
           "distance": 1.5457728200802656
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Leonard Miller",
@@ -20547,7 +21144,9 @@
           "player": "Cedric Coward",
           "distance": 1.6691510103779588
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Josh Okogie",
@@ -20617,7 +21216,9 @@
           "player": "Taylor Hendricks",
           "distance": 1.7123460514269861
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Kobe Brown",
@@ -20687,7 +21288,9 @@
           "player": "Kenrich Williams",
           "distance": 1.519543651180136
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Karlo Matković",
@@ -20757,7 +21360,9 @@
           "player": "Collin Murray-Boyles",
           "distance": 2.7780840107824805
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Spencer Jones",
@@ -20827,7 +21432,9 @@
           "player": "Josh Okogie",
           "distance": 1.8473129022204482
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Alex Caruso",
@@ -20897,7 +21504,9 @@
           "player": "Marcus Smart",
           "distance": 2.1095902449641093
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Jayson Tatum",
@@ -20967,7 +21576,9 @@
           "player": "Jeremiah Fears",
           "distance": 2.607459985265177
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Trendon Watford",
@@ -21037,7 +21648,9 @@
           "player": "Dylan Harper",
           "distance": 2.2429377827669583
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Adem Bona",
@@ -21107,7 +21720,9 @@
           "player": "Ryan Kalkbrenner",
           "distance": 2.579745387501902
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Daeqwon Plowden",
@@ -21177,7 +21792,9 @@
           "player": "Dalton Knecht",
           "distance": 1.2823541434181103
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Nikola Jović",
@@ -21247,7 +21864,9 @@
           "player": "De'Andre Hunter",
           "distance": 2.1424705249151863
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Jalen Wilson",
@@ -21317,7 +21936,9 @@
           "player": "Noah Clowney",
           "distance": 1.643950002777475
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Dean Wade",
@@ -21387,7 +22008,9 @@
           "player": "Sion James",
           "distance": 1.956712257856387
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Mouhamed Gueye",
@@ -21457,7 +22080,9 @@
           "player": "Josh Okogie",
           "distance": 1.8264396208192124
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Bryce McGowens",
@@ -21527,7 +22152,9 @@
           "player": "Derrick Jones Jr.",
           "distance": 2.197224003944691
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Mitchell Robinson",
@@ -21597,7 +22224,9 @@
           "player": "Robert Williams III",
           "distance": 3.234479336815154
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Devin Carter",
@@ -21667,7 +22296,9 @@
           "player": "Tyrese Proctor",
           "distance": 1.9902865597469095
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Jevon Carter",
@@ -21737,7 +22368,9 @@
           "player": "Aaron Holiday",
           "distance": 1.6647062351949562
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Jericho Sims",
@@ -21807,7 +22440,9 @@
           "player": "Neemias Queta",
           "distance": 3.6736237596463353
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Sharife Cooper",
@@ -21877,7 +22512,9 @@
           "player": "Javon Small",
           "distance": 2.0734612690057594
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Ben Saraf",
@@ -21947,7 +22584,9 @@
           "player": "Pat Spencer",
           "distance": 2.4483585471226883
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Rayan Rupert",
@@ -22017,7 +22656,9 @@
           "player": "Micah Peavy",
           "distance": 1.7903465699114671
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Kris Murray",
@@ -22087,7 +22728,9 @@
           "player": "Sion James",
           "distance": 1.5244494287057664
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Kasparas Jakučionis",
@@ -22157,7 +22800,9 @@
           "player": "Toumani Camara",
           "distance": 1.9320376238468373
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Anthony Gill",
@@ -22227,7 +22872,9 @@
           "player": "Derrick Jones Jr.",
           "distance": 2.233364602441598
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Keegan Murray",
@@ -22297,7 +22944,9 @@
           "player": "Andrew Wiggins",
           "distance": 2.1830685113240276
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Jaden Ivey",
@@ -22367,7 +23016,9 @@
           "player": "Malik Monk",
           "distance": 1.390091869709541
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Ochai Agbaji",
@@ -22437,7 +23088,9 @@
           "player": "Luguentz Dort",
           "distance": 1.5333353253297843
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Aaron Holiday",
@@ -22507,7 +23160,9 @@
           "player": "Jaylen Wells",
           "distance": 1.4417698432199173
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Domantas Sabonis",
@@ -22577,7 +23232,9 @@
           "player": "Paolo Banchero",
           "distance": 2.672063586507955
         }
-      ]
+      ],
+      "cluster": 2,
+      "archetype": "High-Volume Scorer"
     },
     {
       "name": "Jett Howard",
@@ -22647,7 +23304,9 @@
           "player": "Rui Hachimura",
           "distance": 1.685705176317198
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Vince Williams Jr.",
@@ -22717,7 +23376,9 @@
           "player": "Ousmane Dieng",
           "distance": 2.269783638224949
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Carter Bryant",
@@ -22787,7 +23448,9 @@
           "player": "Patrick Williams",
           "distance": 1.7795119549157647
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Nicolas Batum",
@@ -22857,7 +23520,9 @@
           "player": "Taurean Prince",
           "distance": 2.2898592925504286
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Tre Mann",
@@ -22927,7 +23592,9 @@
           "player": "Jeremiah Fears",
           "distance": 2.1886445499001073
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Tyrese Martin",
@@ -22997,7 +23664,9 @@
           "player": "Ethan Thompson",
           "distance": 1.5731350786999538
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Craig Porter Jr.",
@@ -23067,7 +23736,9 @@
           "player": "Kyle Anderson",
           "distance": 2.41812452027965
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Hugo González",
@@ -23137,7 +23808,9 @@
           "player": "Josh Okogie",
           "distance": 1.7417989673906045
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Jarred Vanderbilt",
@@ -23207,7 +23880,9 @@
           "player": "Hugo González",
           "distance": 1.7397535244925755
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Clint Capela",
@@ -23277,7 +23952,9 @@
           "player": "Precious Achiuwa",
           "distance": 3.055307922266062
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Jabari Walker",
@@ -23347,7 +24024,9 @@
           "player": "Justin Champagnie",
           "distance": 1.813737592072023
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Nick Richards",
@@ -23417,7 +24096,9 @@
           "player": "Adem Bona",
           "distance": 3.221975465431862
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Jaylen Clark",
@@ -23487,7 +24168,9 @@
           "player": "Rayan Rupert",
           "distance": 1.8478639492166464
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Tyler Kolek",
@@ -23557,7 +24240,9 @@
           "player": "Keaton Wallace",
           "distance": 2.134482541514102
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Tyrese Proctor",
@@ -23627,7 +24312,9 @@
           "player": "Brandin Podziemski",
           "distance": 1.7275289700277436
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Kyle Anderson",
@@ -23697,7 +24384,9 @@
           "player": "Bilal Coulibaly",
           "distance": 2.4885585986190137
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Jamaree Bouyea",
@@ -23767,7 +24456,9 @@
           "player": "Cody Williams",
           "distance": 1.7557753327480732
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Micah Peavy",
@@ -23837,7 +24528,9 @@
           "player": "Dalen Terry",
           "distance": 2.4337475062177982
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Jalen Pickett",
@@ -23907,7 +24600,9 @@
           "player": "Max Christie",
           "distance": 2.137940402021888
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Jordan Hawkins",
@@ -23977,7 +24672,9 @@
           "player": "Drake Powell",
           "distance": 1.8109006648160049
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Pete Nance",
@@ -24047,7 +24744,9 @@
           "player": "Dalton Knecht",
           "distance": 1.8089543280976834
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Grant Williams",
@@ -24117,7 +24816,9 @@
           "player": "Harrison Barnes",
           "distance": 1.9621801822628817
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Josh Green",
@@ -24187,7 +24888,9 @@
           "player": "Royce O'Neale",
           "distance": 1.9061620225576337
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "John Konchar",
@@ -24257,7 +24960,9 @@
           "player": "Keon Ellis",
           "distance": 2.6986409830220235
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Kevin Love",
@@ -24327,7 +25032,9 @@
           "player": "Kobe Brown",
           "distance": 2.4053109168017657
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Mohamed Diawara",
@@ -24397,7 +25104,9 @@
           "player": "Aaron Holiday",
           "distance": 1.376378449484607
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Mike Conley",
@@ -24467,7 +25176,9 @@
           "player": "Ben Sheppard",
           "distance": 2.330109542949033
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Terrence Shannon Jr",
@@ -24537,7 +25248,9 @@
           "player": "Jaylen Wells",
           "distance": 1.8507623803244215
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Jase Richardson",
@@ -24607,7 +25320,9 @@
           "player": "Devin Vassell",
           "distance": 1.4606816598602845
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Taurean Prince",
@@ -24677,7 +25392,9 @@
           "player": "AJ Green",
           "distance": 1.6739933911939824
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Dylan Cardwell",
@@ -24747,7 +25464,9 @@
           "player": "Daniel Gafford",
           "distance": 2.836769677831007
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Rasheer Fleming",
@@ -24817,7 +25536,9 @@
           "player": "Jabari Smith Jr.",
           "distance": 1.7440598468830943
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Cole Anthony",
@@ -24887,7 +25608,9 @@
           "player": "Kyshawn George",
           "distance": 2.875509635761551
         }
-      ]
+      ],
+      "cluster": 4,
+      "archetype": "Do-It-All Superstar"
     },
     {
       "name": "Gabe Vincent",
@@ -24957,7 +25680,9 @@
           "player": "Miles McBride",
           "distance": 2.0153725665442797
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Dalton Knecht",
@@ -25027,7 +25752,9 @@
           "player": "Tristan da Silva",
           "distance": 1.576908344711661
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Caleb Martin",
@@ -25097,7 +25824,9 @@
           "player": "Josh Okogie",
           "distance": 1.8729819863848483
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Noah Penda",
@@ -25167,7 +25896,9 @@
           "player": "P.J. Washington",
           "distance": 1.8104480419109552
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Ethan Thompson",
@@ -25237,7 +25968,9 @@
           "player": "Luguentz Dort",
           "distance": 1.5346135350660621
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Tidjane Salaün",
@@ -25307,7 +26040,9 @@
           "player": "Thomas Bryant",
           "distance": 1.725814624898022
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Drew Eubanks",
@@ -25377,7 +26112,9 @@
           "player": "Oso Ighodaro",
           "distance": 2.170703891515766
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Dwight Powell",
@@ -25447,7 +26184,9 @@
           "player": "Zion Williamson",
           "distance": 5.726689729900833
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Tyus Jones",
@@ -25517,7 +26256,9 @@
           "player": "Ethan Thompson",
           "distance": 2.785811171583134
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Jahmai Mashack",
@@ -25587,7 +26328,9 @@
           "player": "Kentavious Caldwell-Pope",
           "distance": 2.4099905303964233
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Jamison Battle",
@@ -25657,7 +26400,9 @@
           "player": "Corey Kispert",
           "distance": 1.8253302398365037
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Zeke Nnaji",
@@ -25727,7 +26472,9 @@
           "player": "Jock Landale",
           "distance": 1.9125136492455102
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Steven Adams",
@@ -25797,7 +26544,9 @@
           "player": "Isaiah Jackson",
           "distance": 3.3263228379902605
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Keaton Wallace",
@@ -25867,7 +26616,9 @@
           "player": "Tyrese Martin",
           "distance": 1.8681063708041443
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Johnny Furphy",
@@ -25937,7 +26688,9 @@
           "player": "Ryan Dunn",
           "distance": 1.6204813083368879
         }
-      ]
+      ],
+      "cluster": 5,
+      "archetype": "Two-Way Wing"
     },
     {
       "name": "Elijah Harkless",
@@ -26007,7 +26760,9 @@
           "player": "Rayan Rupert",
           "distance": 2.582492700679191
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Dalen Terry",
@@ -26077,7 +26832,9 @@
           "player": "Marcus Smart",
           "distance": 1.7083676565991974
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Moussa Cisse",
@@ -26147,7 +26904,9 @@
           "player": "Steven Adams",
           "distance": 3.7719008344325897
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Kam Jones",
@@ -26217,7 +26976,9 @@
           "player": "Davion Mitchell",
           "distance": 2.39044012481121
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Lonzo Ball",
@@ -26287,7 +27048,9 @@
           "player": "Dalen Terry",
           "distance": 3.4789149641590913
         }
-      ]
+      ],
+      "cluster": 3,
+      "archetype": "Versatile Role Player"
     },
     {
       "name": "Jonathan Isaac",
@@ -26357,7 +27120,9 @@
           "player": "Yves Missi",
           "distance": 3.4416253447669742
         }
-      ]
+      ],
+      "cluster": 1,
+      "archetype": "Interior Defensive Big"
     },
     {
       "name": "Gary Harris",
@@ -26427,7 +27192,9 @@
           "player": "Ben Sheppard",
           "distance": 1.9664571157482271
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     },
     {
       "name": "Dorian Finney-Smith",
@@ -26497,7 +27264,9 @@
           "player": "Ben Sheppard",
           "distance": 2.4585077807191467
         }
-      ]
+      ],
+      "cluster": 0,
+      "archetype": "Three-Point Specialist"
     }
   ]
 }

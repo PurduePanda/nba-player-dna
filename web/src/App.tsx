@@ -10,8 +10,8 @@ function euclideanDistance(
 
   for (const feature of features) {
     const difference =
-    playerA.scaled_features[feature] -
-    playerB.scaled_features[feature];
+      playerA.scaled_features[feature] -
+      playerB.scaled_features[feature];
 
     squaredDifferenceSum += difference ** 2;
   }
@@ -27,24 +27,24 @@ function App() {
 
   useEffect(() => {
     fetch("/data/nba_player_similarity_data.json")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Could not load NBA player data.");
-      }
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Could not load NBA player data.");
+        }
 
-      return response.json();
-    })
-    .then((json: AppData) => {
-      setData(json);
+        return response.json();
+      })
+      .then((json: AppData) => {
+        setData(json);
 
-      if (json.players.length >= 2) {
-        setPlayerAName(json.players[0].name);
-        setPlayerBName(json.players[1].name);
-      }
-    })
-    .catch((err) => {
-      setError(err.message);
-    })
+        if (json.players.length >= 2) {
+          setPlayerAName(json.players[0].name);
+          setPlayerBName(json.players[1].name);
+        }
+      })
+      .catch((err) => {
+        setError(err.message);
+      })
   }, []);
 
   if (error) {
@@ -64,122 +64,146 @@ function App() {
   );
 
   const distance =
-  playerA && playerB
-  ? euclideanDistance(
-    playerA,
-    playerB,
-    data.metadata.features
-  )
-  : null;
+    playerA && playerB
+      ? euclideanDistance(
+        playerA,
+        playerB,
+        data.metadata.features
+      )
+      : null;
 
   const sortedPlayers = [...data.players].sort((a, b) =>
-  a.name.localeCompare(b.name)
+    a.name.localeCompare(b.name)
   );
 
   return (
-    <main className = "app">
+    <main className="app">
       <h1>NBA Player DNA</h1>
-        <p>
-          Compare NBA Players Using Standardized Statistical Profiles.
-        </p>
+      <p>
+        Compare NBA Players Using Standardized Statistical Profiles.
+      </p>
 
-        <div className="selectors">
-          <label>
-            Player A
+      <div className="selectors">
+        <label>
+          Player A
 
-            <select
-              value={playerAName}
-              onChange={(event) => 
-                setPlayerAName(event.target.value)
-              }
-            >
-              {sortedPlayers.map((player) => (
-                <option key={player.name} value={player.name}>
-                  {player.name}
-                </option>
-              ))}
-            </select>
-          </label>
+          <select
+            value={playerAName}
+            onChange={(event) =>
+              setPlayerAName(event.target.value)
+            }
+          >
+            {sortedPlayers.map((player) => (
+              <option key={player.name} value={player.name}>
+                {player.name}
+              </option>
+            ))}
+          </select>
+        </label>
 
-          <label>
-            Player B
+        <label>
+          Player B
 
-            <select
-              value={playerBName}
-              onChange={(event) =>
-                setPlayerBName(event.target.value)
-              }
-            >
-              {sortedPlayers.map((player) => (
-                <option key={player.name} value={player.name}>
-                  {player.name}
-                </option>
-              ))}
-            </select>
-          </label>
-        </div>
+          <select
+            value={playerBName}
+            onChange={(event) =>
+              setPlayerBName(event.target.value)
+            }
+          >
+            {sortedPlayers.map((player) => (
+              <option key={player.name} value={player.name}>
+                {player.name}
+              </option>
+            ))}
+          </select>
+        </label>
+      </div>
 
-        {playerA && playerB && distance !== null && (
-          <section className="distance-card">
-            <h2>
-              {playerA.name} vs. {playerB.name}
-            </h2>
+      {playerA && playerB && distance !== null && (
+        <section className="distance-card">
+          <h2>
+            {playerA.name} vs. {playerB.name}
+          </h2>
+          
+          <div className="archetype-comparison">
+            <div>
+              <h3>{playerA.name}</h3>
+              <p>{playerA.team}</p>
+              <p>
+                <strong>Archetype:</strong> {playerA.archetype}
+              </p>
+            </div>
 
-            <p className="distance">
-              {distance.toFixed(3)}
-            </p>
+            <div>
+              <h3>{playerB.name}</h3>
+              <p>{playerB.team}</p>
+              <p>
+                <strong>Archetype:</strong> {playerB.archetype}
+              </p>
+            </div>
+          </div>
 
-            <p>
-              Euclidean distance -- lower means more statistically similar.
-            </p>
-          </section>
-        )}
+          <p className="distance">
+            {distance.toFixed(3)}
+          </p>
 
-        {playerA && playerB && (
-          <section>
-            <h2>Statistical Comparison</h2>
+          <p>
+            Euclidean distance -- lower means more statistically similar.
+          </p>
 
-            <table>
-              <thead>
-                <tr>
-                  <th>Feature</th>
-                  <th>{playerA.name}</th>
-                  <th>{playerB.name}</th>
+          <p>
+            {playerA.archetype === playerB.archetype
+              ? "These players belong to the same statistical archetype."
+              : "These players belong to different statistical archetypes."}
+          </p>
+        </section>
+      )}
+
+      {playerA && playerB && (
+        <section>
+          <h2>Statistical Comparison</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>{playerA.name}</th>
+                <th>{playerB.name}</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {data.metadata.features.map((feature => (
+                <tr key={feature}>
+                  <td>{feature}</td>
+
+                  <td>
+                    {playerA.features[feature].toFixed(3)}
+                  </td>
+
+                  <td>
+                    {playerB.features[feature].toFixed(3)}
+                  </td>
                 </tr>
-              </thead>
+              )))}
+            </tbody>
+          </table>
+        </section>
+      )}
 
-              <tbody>
-                {data.metadata.features.map((feature => (
-                  <tr key={feature}>
-                    <td>{feature}</td>
+      {playerA && (
+        <section>
+          <h2>Players Most Similar to {playerA.name}</h2>
 
-                    <td>
-                      {playerA.features[feature].toFixed(3)}
-                    </td>
-
-                    <td>
-                      {playerB.features[feature].toFixed(3)}
-                    </td>
-                  </tr>
-                )))}
-              </tbody>
-            </table>
-          </section>
-        )}
-
-        {playerA && (
-          <section>
-            <h2>Players Most Similar to {playerA.name}</h2>
-
-            <ol>
-              {playerA.neighbors.slice(0, 5).map((neighbor) => (
-                <li key={neighbor.player}>
-                  {neighbor.player} - {neighbor.distance.toFixed(3)}
-                </li>
-              ))}
-            </ol>
-          </section>
-        )}
+          <ol>
+            {playerA.neighbors.slice(0, 5).map((neighbor) => (
+              <li key={neighbor.player}>
+                {neighbor.player} - {neighbor.distance.toFixed(3)}
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
     </main>
   );
 }
@@ -196,6 +220,10 @@ type Player = {
   team: string;
   age: number;
   minutes: number;
+
+  cluster: number;
+  archetype: string;
+
   features: Record<string, number>;
   scaled_features: Record<string, number>;
   neighbors: Neighbor[];
