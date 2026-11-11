@@ -74,13 +74,13 @@ nba-player-dna/
 - Selection of Euclidean distance as the primary metric
 - Nearest-neighbor player search
 - Application-ready JSON export
-
-### Next Steps
-
 - Convert notebook code into reusable Python modules
 - Build the React frontend
 - Create a player-vs-player comparison interface
 - Add player archetypes using clustering
+
+### Next Steps
+
 - Add similarity explanations and visualizations
 - Deploy the completed application
 
