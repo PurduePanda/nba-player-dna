@@ -91,7 +91,7 @@ nba-player-dna/
 - NumPy
 - scikit-learn
 - Jupyter / Google Colab
-- React (planned)
+- React
 - Git / GitHub
 
 ## Project Goal
