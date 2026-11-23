@@ -19,6 +19,21 @@ function euclideanDistance(
   return Math.sqrt(squaredDifferenceSum);
 }
 
+function formatFeatureValue(
+  feature: string,
+  value: number
+) {
+  if (
+    feature === "3PA_RATE" ||
+    feature === "FTA_RATE" ||
+    feature === "TS%"
+  ) {
+    return `${(value * 100).toFixed(1)}%`;
+  }
+
+  return value.toFixed(2);
+}
+
 function App() {
   const [data, setData] = useState<AppData | null>(null);
   const [playerAName, setPlayerAName] = useState("");
@@ -26,7 +41,7 @@ function App() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("/data/nba_player_similarity_data.json")
+    fetch("/data/nba_player_similarity_data_final.json")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Could not load NBA player data.");
@@ -76,12 +91,35 @@ function App() {
     a.name.localeCompare(b.name)
   );
 
+  const categories = [
+    ["Scoring", "scoring"],
+    ["Playmaking", "playmaking"],
+    ["Efficiency", "efficiency"],
+    ["Rebounding", "rebounding"],
+    ["Defensive Activity", "defensive_activity"],
+  ] as const;
+
+const featureLabels: Record<string, string> = {
+  FGA_36: "Field Goal Attempts / 36",
+  "3PA_RATE": "3-Point Attempt Rate",
+  FTA_RATE: "Free Throw Attempt Rate",
+  "TS%": "True Shooting %",
+  AST_36: "Assists / 36",
+  TOV_36: "Turnovers / 36",
+  REB_36: "Rebounds / 36",
+  STL_36: "Steals / 36",
+  BLK_36: "Blocks / 36",
+};
+
   return (
     <main className="app">
-      <h1>NBA Player DNA</h1>
-      <p>
-        Compare NBA Players Using Standardized Statistical Profiles.
-      </p>
+      <header className="hero">
+        <h1>NBA Player DNA</h1>
+        <p>
+          Compare NBA players using statistical similarity, archetypes,
+          and percentile-based category scores.
+        </p>
+      </header>
 
       <div className="selectors">
         <label>
@@ -160,6 +198,54 @@ function App() {
       )}
 
       {playerA && playerB && (
+        <section className="category-section">
+          <h2>Category Scores</h2>
+
+            <p className="category-description">
+              Scores represent percentile rankings among eligible players in the dataset.
+            </p>
+
+            <div className="category-header">
+              <span>Category</span>
+              <span>{playerA.name}</span>
+              <span>{playerB.name}</span>
+            </div>
+
+            {categories.map(([label, key]) => (
+              <div className="category-row" key={key}>
+                <span className="category-name">{label}</span>
+
+                <div className="category-player-score">
+                  <strong>{playerA.category_scores[key]}</strong>
+
+                  <div className="score-bar">
+                    <div
+                      className="score-fill"
+                      style={{
+                        width: `${playerA.category_scores[key]}%`,
+                      }}
+                    />
+                  </div>
+                </div>
+
+                <div className="category-player-score">
+                  <strong>{playerB.category_scores[key]}</strong>
+
+                  <div className="score-bar">
+                    <div
+                      className="score-fill"
+                      style={{
+                        width: `${playerB.category_scores[key]}%`,
+                      }}
+                    />
+                    </div>
+                  </div>
+                </div>
+            ))}
+        </section>
+      )}
+
+      {playerA && playerB && (
         <section>
           <h2>Statistical Comparison</h2>
 
@@ -175,14 +261,20 @@ function App() {
             <tbody>
               {data.metadata.features.map((feature => (
                 <tr key={feature}>
-                  <td>{feature}</td>
+                  <td>{featureLabels[feature] ?? feature}</td>
 
                   <td>
-                    {playerA.features[feature].toFixed(3)}
+                    {formatFeatureValue(
+                      feature,
+                      playerA.features[feature]
+                    )}
                   </td>
 
                   <td>
-                    {playerB.features[feature].toFixed(3)}
+                    {formatFeatureValue(
+                      feature,
+                      playerB.features[feature]
+                    )}
                   </td>
                 </tr>
               )))}
@@ -223,6 +315,7 @@ type Player = {
 
   cluster: number;
   archetype: string;
+  category_scores: CategoryScores;
 
   features: Record<string, number>;
   scaled_features: Record<string, number>;
@@ -240,4 +333,12 @@ type Metadata = {
 type AppData = {
   metadata: Metadata;
   players: Player[];
+};
+
+type CategoryScores = {
+  scoring: number;
+  playmaking: number;
+  efficiency: number;
+  rebounding: number;
+  defensive_activity: number;
 };
